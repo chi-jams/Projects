@@ -1,0 +1,1 @@
+cake = lambda n:print(n)
