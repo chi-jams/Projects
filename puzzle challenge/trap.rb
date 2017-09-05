@@ -1,6 +1,15 @@
 
-message = File.read("trap.txt")
+codes = File.read("trap_codes.txt").split("\n")
 
-puts message.scan(/_\w+/).map{|w| w.sub("_", "")}.join(' ')
+conversion_table = codes.map do |line|
+  err_code, err_name = line.split(/\s+/)
 
-puts "Mac OS 10.6.5 based on the instruction sets specified by _..."
+  [err_name, err_code.to_i(16)]
+end.to_h
+
+message = File.read("trap.txt").gsub(/[_,]/, '').gsub('minus', '-')
+              .gsub('plus', '+').gsub(/\w+/) { |word| conversion_table[word] }
+
+message.split("\n").each {|equation| puts(eval(equation).chr)}
+
+
