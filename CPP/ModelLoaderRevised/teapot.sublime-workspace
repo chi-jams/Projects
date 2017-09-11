@@ -1,0 +1,966 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"glBin",
+				"glBindVertexArray"
+			],
+			[
+				"unif",
+				"uniformBlockBinding"
+			],
+			[
+				"glBuf",
+				"glBufferSubData"
+			],
+			[
+				"modelMat",
+				"modelMatLoc"
+			],
+			[
+				"indi",
+				"indiciesPerPrimitive"
+			],
+			[
+				"how",
+				"hogwarts_dada"
+			],
+			[
+				"push",
+				"push_back"
+			],
+			[
+				"start",
+				"startLocation"
+			],
+			[
+				"Open",
+				"OpenGLUtils"
+			],
+			[
+				"n",
+				"NUM_VERT_ATTS"
+			],
+			[
+				"GLFW",
+				"GLFWwindow"
+			],
+			[
+				"hogwarts",
+				"hogwarts_students"
+			],
+			[
+				"frambu",
+				"framebufferSizeLoc"
+			],
+			[
+				"GL_TEXTURE",
+				"GL_TEXTURE_2D"
+			],
+			[
+				"NUM",
+				"NUM_PSYSTEM_INPUTS"
+			],
+			[
+				"Particle",
+				"ParticleSystem"
+			],
+			[
+				"rain",
+				"rainTex"
+			],
+			[
+				"gl_te",
+				"GL_TEXTURE_2D"
+			],
+			[
+				"GL_Te",
+				"GL_TEXTURE_2D"
+			],
+			[
+				"buildi",
+				"buildingDiff"
+			],
+			[
+				"minLi",
+				"minLifespan"
+			],
+			[
+				"Parti",
+				"ParticleSystem"
+			],
+			[
+				"camVec",
+				"camVeciNext"
+			],
+			[
+				"tree",
+				"treeSpritePositions"
+			],
+			[
+				"fore",
+				"forestCenter"
+			],
+			[
+				"teapo",
+				"teapotSize"
+			],
+			[
+				"TEAPO",
+				"teapotTex"
+			],
+			[
+				"program",
+				"programHandle"
+			],
+			[
+				"uni",
+				"uniformTimeLoc"
+			],
+			[
+				"un",
+				"uniformTimeLoc"
+			],
+			[
+				"vertexSh",
+				"vertexShaderHandle"
+			],
+			[
+				"GL_LI",
+				"GL_LIGHT0"
+			],
+			[
+				"GL_",
+				"GL_LIGHT0"
+			],
+			[
+				"GLUT_",
+				"GLUT_ACTIVE_CTRL"
+			],
+			[
+				"GL_LIGH",
+				"GL_LIGHTING"
+			],
+			[
+				"Fre",
+				"FREE_CAM"
+			],
+			[
+				"ar",
+				"isArcball"
+			],
+			[
+				"getDi",
+				"getDirX"
+			],
+			[
+				"free",
+				"freeCam"
+			],
+			[
+				"HERO",
+				"HERO_0"
+			],
+			[
+				"compute",
+				"computeFreeCamOrientation"
+			],
+			[
+				"is",
+				"isArcball"
+			],
+			[
+				"fre",
+				"freeCam"
+			],
+			[
+				"fp",
+				"fpCamEnabled"
+			],
+			[
+				"tea",
+				"teapotColor"
+			],
+			[
+				"drawCt",
+				"drawCtrlCage"
+			],
+			[
+				"M",
+				"M_PI"
+			],
+			[
+				"glV",
+				"glVertex3f"
+			],
+			[
+				"cotnrol",
+				"controlPoints"
+			],
+			[
+				"glColo",
+				"glColor3f"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 14836,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "modelLoader.cpp",
+			"settings":
+			{
+				"buffer_size": 7427,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tessModel.cpp",
+			"settings":
+			{
+				"buffer_size": 6989,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					""
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Bench"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Rust/Rust.sublime-build",
+					""
+				],
+				[
+					"Packages/Rust/Rust.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Rust/Rust.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"vmen",
+				"View: Toggle Menu"
+			],
+			[
+				"",
+				"Build With: C++ Single File"
+			],
+			[
+				"get package",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Install Package Control"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(true)",
+			"make",
+			"gmake",
+			"ls",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Google Drive/school/Spring 2017/ACG/Assignments/ModelLoaderRevised"
+	],
+	"file_history":
+	[
+		"/D/Google Drive/school/Spring 2017/ACG/www/studentTemplate.html",
+		"/D/Google Drive/school/Spring 2017/ACG/Assignments/Teapot/README.txt",
+		"/D/Google Drive/school/Spring 2017/ACG/Assignments/Teapot/Camera.cpp",
+		"/D/Google Drive/school/Spring 2017/ACG/Assignments/Teapot/modelLoader.cpp",
+		"/D/Google Drive/school/Spring 2017/Algorithms/AlgoBowl2017/alg",
+		"/D/Google Drive/school/Spring 2017/ACG/Assignments/Teapot/models/teapot.model",
+		"/D/Google Drive/school/Spring 2017/ACG/Assignments/Teapot/src/ShaderUtils.cpp",
+		"/D/Google Drive/school/Spring 2017/ACG/Assignments/Teapot/src/ShaderProgram.cpp",
+		"/D/Google Drive/school/Spring 2017/ACG/Assignments/Teapot/glCube.cpp",
+		"/D/Google Drive/school/Spring 2017/ACG/Assignments/Teapot/glPlane.cpp",
+		"/D/Google Drive/school/Projects/CPP/vecTest/main.cpp",
+		"/D/Google Drive/school/Projects/CPP/vecTest/Makefile",
+		"/D/Google Drive/school/Spring 2017/ACG/Assignments/Teapot/model.cpp",
+		"/D/Users/Daichi/Desktop/RigidGems2_1/Readme.txt",
+		"/D/Google Drive/school/Spring 2017/ACG/Assignments/Teapot/teapot.sublime-project",
+		"/D/Google Drive/school/Spring 2017/ACG/Assignments/CoreProfile/main.cpp",
+		"/D/Google Drive/school/Spring 2017/Algorithms/TSPProj/TSP.cpp",
+		"/D/Google Drive/school/Spring 2017/Algorithms/TSPProj/rand-3000.txt",
+		"/D/Google Drive/school/Spring 2017/Algorithms/TSPProj/rand-500.txt",
+		"/D/Google Drive/school/Spring 2017/Algorithms/TSPProj/rand-9.txt",
+		"/D/Google Drive/school/Spring 2017/Database Management/project4/README.txt",
+		"/D/Google Drive/school/Spring 2017/Database Management/project4/project4.sql",
+		"/D/Google Drive/school/Projects/python/toMap.py",
+		"/D/Google Drive/school/Projects/Rust/handshake/src/main.rs",
+		"/D/Google Drive/school/Projects/Rust/leonardo/src/main.rs",
+		"/D/Google Drive/school/Projects/Rust/guessing_game/src/main.rs",
+		"/D/Google Drive/school/Spring 2017/Database Management/project2/project2.sql",
+		"/D/Google Drive/school/Spring 2017/AI/Project1/readme.txt",
+		"/D/Google Drive/school/Spring 2017/AI/Project1/main.cpp",
+		"/D/Google Drive/school/Spring 2017/AI/Project1/Makefile",
+		"/D/Google Drive/school/Spring 2017/AI/Project1/input1.txt",
+		"/C/Users/Daichi/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Google Drive/school/CSM/Spring 2017/AI/Project1/find_route.py",
+		"/D/Google Drive/school/CSM/Spring 2017/AI/Project1/main.cpp",
+		"/D/Google Drive/school/CSM/Spring 2017/AI/Project1/Makefile",
+		"/D/Google Drive/school/Makefile.example",
+		"/D/Google Drive/school/Makefile.example2",
+		"/D/Google Drive/school/CSM/Spring 2017/AI/Project1/Makefile.example",
+		"/D/Google Drive/other/Projects/helloWorld.py",
+		"/D/Google Drive/other/Projects/Rust/helloWorld.rs",
+		"/D/Google Drive/other/Projects/Rust/helloWorld.exe",
+		"/D/Google Drive/school/CSM/2014-2015/CSCI262/maze_solver/maze_solver/examples/7-center-stack-solution.txt",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Database Management/project 3/README.txt",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Database Management/project 3/project3.sql",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/include/vertexAttributes.h",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/include/Camera.h",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/Camera.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/shaders/BPhong.f.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/shaders/BPhong.v.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Independent/A06/Camera.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Independent/A06/main.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Independent/A06/include/Camera.h",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/include/ShaderUtils.h",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/include/ShaderProgram.h",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/shaders/test.f.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/shaders/test.v.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/include/glCube.h",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/glCube.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/learnopengltest/Makefile",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/learnopengltest/hurr.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/learnopengltest/hurr.txt",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/include/shaderUtils.h",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/shaderUtils.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/opengl41/shaders/._passThroughv410.f.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/opengl41/include/ShaderProgram.h",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/opengl41/main.cpp",
+		"/D/Users/Daichi/Desktop/glm-0.9.8.4/glm/glm.hpp",
+		"/D/Users/Daichi/Desktop/glm-0.9.8.4/build/glm.pc",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/main.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/coreProfile.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Libraries/lib/pkgconfig/glfw3.pc",
+		"/D/Users/Daichi/Desktop/GLFW/lib/pkgconfig/glfw3.pc",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/include/GLFW/glfw3native.h",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/include/GLFW/glfw3.h",
+		"/D/Users/Daichi/Desktop/glfw-3.2.1/build/Makefile",
+		"/D/Users/Daichi/Desktop/glfw-3.2.1/COPYING.txt",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Libraries/include/GL/glew.h",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/glfw-3.2.1.bin.WIN32/COPYING.txt",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/glfw/README.md",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Independent/A06/Makefile",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Assignments/CoreProfile/Makefile.example",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Libraries/bin/glewinfo.txt",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/Libraries/bin/visualinfo.txt",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Database Management/project 2/project2.sql",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Database Management/project 2/README.txt",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Advanced Computer Graphics/glewInstallScript.sh",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/CSM-IEEE/invadingUrStuffs/Vector.py",
+		"/D/Users/Daichi/Google Drive/school/CSM/Spring 2017/Algorithms/TSPProj/TSP.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Independent/A06/Player.cpp",
+		"/D/Users/Daichi/Documents/My Games/Rocket League/TAGame/Demos/5CC575B846693BB4B183C3886172B107.replay",
+		"/D/Users/Daichi/Documents/My Games/Rocket League/TAGame/Demos/CF0DA8ED4DF60080CB964B9A99A1DC92.replay",
+		"/D/Users/Daichi/Documents/My Games/Rocket League/TAGame/Demos/6D03392C4C04BE6666FA4BB7CCABF602.replay",
+		"/D/Users/Daichi/Documents/My Games/Rocket League/TAGame/Demos/5A5698DC46D4C3AA81248B87A5D809C4.replay",
+		"/D/Users/Daichi/Documents/My Games/Rocket League/TAGame/Demos/AB449036496BB119D19ACAABA206E0A4.replay",
+		"/D/Program Files (x86)/Steam/steamapps/common/SNOW/system.cfg",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Assignments/csci441-final/normal.v.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Assignments/csci441-final/normal.f.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Independent/A05/passThrough.v.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Independent/A05/passThrough.f.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Independent/A05/Camera.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Independent/A05/main.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Assignments/A05/Player.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Assignments/A05/passThrough.v.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Assignments/A05/passThrough.f.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/Fall 2016/Computer Graphics/Assignments/A05/main.cpp",
+		"/D/Program Files (x86)/Steam/steamapps/common/rocketleague/TAGame/Config/DefaultInput.ini",
+		"/D/Program Files (x86)/Steam/steamapps/common/rocketleague/TAGame/Config/DefaultSystemSettings.ini",
+		"/D/Users/Daichi/Google Drive/everything else/Independent Projects/Platformer/Platformer/Levels/level0.txt",
+		"/D/Users/Daichi/Google Drive/everything else/Independent Projects/Platformer/Platformer/Levels/level1.txt",
+		"/D/Users/Daichi/Google Drive/everything else/Independent Projects/Platformer/Platformer/Levels/level2.txt",
+		"/D/Program Files (x86)/Steam/steamapps/common/rocketleague/appinfo.vdf",
+		"/D/Users/Daichi/Google Drive/everything else/Independent Projects/Platformer/Platformer/Levels/level3.txt",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Assignments/csci441-final/player.h",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Assignments/csci441-final/ghost.h",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Assignments/csci441-final/README.txt",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Assignments/csci441-final/board.h",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Labs/lab14/shaders/blur.f.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Labs/lab14/shaders/blur.v.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Assignments/csci441-final/ghost.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Assignments/csci441-final/Point.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Labs/lab14/README.txt",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Labs/lab14/main.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Assignments/csci441-final/normal.v.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Assignments/csci441-final/normal.f.glsl",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Assignments/csci441-final/TODO.md",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Assignments/csci441-final/player.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Assignments/csci441-final/board.cpp",
+		"/D/Users/Daichi/Google Drive/school/CSM/2016-2017/Computer Graphics/Assignments/csci441-final/Makefile"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"projection",
+			"*",
+			"woodBlock",
+			"movedLight",
+			"tessLevel",
+			"),",
+			"0.",
+			"),",
+			"0.",
+			"55",
+			"7.0",
+			"1.0",
+			"0.75",
+			"0.5",
+			"3",
+			"0.25",
+			"1.0",
+			"8",
+			"0.5",
+			"light",
+			"vec3",
+			"lightPos",
+			"vec4",
+			"(",
+			");",
+			"setMatrix",
+			"std",
+			"modelLoader",
+			"\"\n",
+			"25",
+			"teapotPart",
+			"cube",
+			"bPShaders",
+			"bPviewVecLoc",
+			"bPhong",
+			"lightBlockLoc",
+			"bPviewVecLoc",
+			"viewVecLoc",
+			"matBlockLoc",
+			"bPShaders",
+			"string",
+			"glm",
+			"vec4",
+			"glm",
+			"void",
+			"amb",
+			"m",
+			"amb",
+			");",
+			");\n",
+			"void",
+			"7",
+			"6",
+			"std::endl",
+			"std::cout",
+			"vertecies",
+			"indicies",
+			"Indicies",
+			"glm",
+			"modelColor",
+			"glm",
+			"numIndicies",
+			"VBOptr",
+			"4",
+			"2 * sizeof( glm::vec4 )",
+			"1",
+			"5",
+			"glm",
+			"model",
+			");\n",
+			"model",
+			"pow",
+			"pair< string, double >",
+			"toVisit",
+			"nextLoc",
+			"Location",
+			"std::",
+			"pathCost",
+			"std::cout",
+			"        \n",
+			"return",
+			"4d5a",
+			"cube",
+			"depth",
+			"cubeIndiciesVBO",
+			"cubeVBO",
+			"nullptr",
+			"simpleCube",
+			"glCube",
+			"cubeVAO",
+			"-I",
+			"coreProfile",
+			"hogwarts_students",
+			"init",
+			"rain",
+			"light",
+			"fountains",
+			"thing",
+			"glutTimerFunc",
+			"framebufferSize",
+			"blurSizeLoc",
+			"todo",
+			"5",
+			"framebuffer",
+			");\n",
+			"vertexArray",
+			"todo ",
+			"preparemesh",
+			"endif",
+			"light0",
+			");\n",
+			"voi",
+			"1000",
+			"2000",
+			"fountain",
+			"wood",
+			"surface",
+			"wood",
+			"spriteYWidth",
+			"spriteXWidth",
+			"imageData",
+			".getZ() + forestCenter",
+			".getX() + forestCenter",
+			"treeSpritePositions",
+			"cameraXYZ",
+			"cameraPOS",
+			"treeSpritePositions",
+			"cameraXYZ"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": false,
+		"replace_history":
+		[
+			"vertices",
+			"indices",
+			"path",
+			"frontier",
+			"curLoc",
+			"Loc",
+			"",
+			"std::pair< std::string, double >",
+			"plane",
+			"indiciesVBOptr",
+			"VBOptr",
+			"NULL",
+			"glCube",
+			"simpleCube",
+			"VAOptr",
+			"sphere",
+			"SKYBOX_SIZE / 2",
+			"SKYBOX_SIZE",
+			"rain",
+			"skybox",
+			"surface",
+			"Surface",
+			"quadHeight",
+			"quadWidth",
+			"texData",
+			"",
+			"system",
+			"cameraPos",
+			"system",
+			"cameraPos",
+			"ballDistance",
+			"[j]",
+			"[i]",
+			"Z",
+			"10000",
+			"std::string",
+			"",
+			"1000",
+			"10",
+			"tailColor",
+			"bodyColor",
+			"propColor",
+			"//glColor",
+			"1000",
+			"//glColor",
+			"",
+			"GL_TEXTURE_2D",
+			"loadTextureFromFile",
+			"GL_SPOT_",
+			"light1",
+			"floor",
+			"",
+			"int",
+			"",
+			"TASH",
+			"DR_OCCLUDO",
+			"LAYTH",
+			"layth",
+			"hero.position.",
+			"hero.position",
+			"fpCam",
+			"freeCam",
+			"camSubj ",
+			"camSubj",
+			"fpSubj",
+			"",
+			"tpt",
+			"speed",
+			"position",
+			"1",
+			"2",
+			"drawBezierStrip",
+			"frontRot",
+			"size",
+			"MapBounds[]",
+			"topPropRot",
+			"rotationSpeed",
+			"theta",
+			"speed",
+			"z",
+			"y",
+			"x",
+			" ",
+			".*?[\\ ]",
+			"-",
+			"argv[1]",
+			"'",
+			"/",
+			"Daichi",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12203,
+								12203
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8090.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "modelLoader.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7427,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "tessModel.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6989,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "teapot.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 191.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
