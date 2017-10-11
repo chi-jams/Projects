@@ -33,10 +33,11 @@ func main() {
 
     file, err := os.Create(os.Args[2])
     defer file.Close()
-
     check(err)
 
-    err = png.Encode(file, img)
+    img_encoder := new(png.Encoder)
+    //img_encoder.CompressionLevel = png.NoCompression
+    err = img_encoder.Encode(file, img)
     check(err)
 
     //err = ioutil.WriteFile(os.Args[2], dat, 0644)
