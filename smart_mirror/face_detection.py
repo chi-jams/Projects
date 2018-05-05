@@ -11,6 +11,8 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 r,h,c,w = 250,90,400,125
 track_window = (c,r,w,h)
 
+cv2.namedWindow('frame')
+cv2.createTrackbar('value', 'frame', 0, 255, lambda x: 0)
 # Setup the termination criteria, either 10 iteration or move by atleast 1 pt
 term_crit = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 1)
 
@@ -43,9 +45,10 @@ while True:
         pts = cv2.boxPoints(ret)
         pts = np.int0(pts)
         #frame = cv2.polylines(frame,[pts],True, 255,2) 
-        frame = cv2.polylines(hsv,[pts],True, 255,2) 
+        frame = cv2.polylines(frame,[pts],True, 255,2) 
 
     cv2.imshow('frame', frame) 
+    cv2.imshow('blep', hsv)
 
     keyPress = cv2.waitKey(1)
     if keyPress == ord('q'):
