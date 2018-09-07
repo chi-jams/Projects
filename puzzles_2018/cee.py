@@ -34,6 +34,16 @@ translate = lambda c, i: list(alp)[rotate(key, i).find(c)]
 final = ""
 d = enchant.Dict("en_US")
 
+o = 13
+final = ""
+for c in list(msg):
+    if c in key:
+        final += translate(c, o)
+        o += 1
+    else:
+        final += c
+print(final)
+'''
 for word in msg.split():
     o = 0
     opts = []
@@ -49,8 +59,8 @@ for word in msg.split():
     print(o, opts)
 
     #final += " " + trans
-
 print(final)
+'''
 '''
 for t, word in enumerate(msg.split()):
     #o = clock[t % len(clock)]
