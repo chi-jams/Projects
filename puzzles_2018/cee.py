@@ -40,15 +40,12 @@ for word in msg.split():
     trans = ''.join([translate(c, i + o) if c in key else c for i, c in enumerate(list(word))])
     #while not d.check(trans) and o < 26:
     while o < 26:
-        o += 1
         if d.check(trans) or word == "DTHNF" or word == "QWEUSW":
             opts.append((o,trans))
             #opts.append(trans)
+        o += 1
         trans = ''.join([translate(c, i + o) if c in key else c for i, c in enumerate(list(word))])
 
-    if d.check(trans) or word == "DTHNF" or word == "QWEUSW":
-        opts.append((o,trans))
-        #opts.append(trans)
     print(o, opts)
 
     #final += " " + trans
