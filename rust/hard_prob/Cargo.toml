@@ -1,0 +1,8 @@
+[package]
+name = "hard_prob"
+version = "0.1.0"
+authors = ["daichij <djameson@mines.edu>"]
+
+[dependencies]
+rand = "*"
+num = "*"
