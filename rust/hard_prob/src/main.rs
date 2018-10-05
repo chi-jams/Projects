@@ -21,7 +21,7 @@ fn get_slice(n: &BigUint, nums: &Vec<u64>) -> Vec<u64> {
     let mut subset = n.clone();
     let mut i = 0;
     let mut set = Vec::new();
-    while subset != traits::zero() {
+    while subset != BigUint::from(0 as u32) {
         if subset.is_odd() {
             set.push(nums[i]);
         }
@@ -30,6 +30,24 @@ fn get_slice(n: &BigUint, nums: &Vec<u64>) -> Vec<u64> {
     }
     
     set
+}
+
+fn subset_sum(nums: &Vec<u64>, k: u64) -> (bool, BigUint) {
+    let base = BigUint::from(2 as u32);
+    let num_subsets = pow::pow(base, nums.len());
+
+    let mut i = BigUint::from(0 as u32);
+    while i < num_subsets {
+        let subset = get_slice(&i, &nums);
+        let sum: u64 = subset.iter().sum();
+        if sum == k {
+            return (true, i);
+        }
+        println!("{}: {} {:?}", i, sum, subset);
+        i = i + 1 as u64;
+    }
+
+    (false, BigUint::from(0 as u32))
 }
 
 fn main() {
@@ -60,26 +78,10 @@ fn main() {
     println!("Target number is {}!", k);
 
     let nums = gen_nums(n);
-    for i in 0..n {
-        println!("{}: {}", i, nums[i as usize]);
-    }
 
-    let base = BigUint::from(2 as u32);
-    let num_subsets = pow::pow(base, nums.len());
-    println!("There are {} possible subsets, {}", num_subsets, nums.len());
-    
+    let (exists, subset) = subset_sum(&nums, k);
 
-    let mut i: BigUint = traits::zero();
-    while i < num_subsets {
-        let subset = get_slice(&i, &nums);
-        let sum: u64 = subset.iter().sum();
-        println!("{}: {} {:?}", i, sum, subset);
-        i = i + 1 as u64;
+    if exists {
+        println!("There exists a subset that equals {} and it is: {:?}", k, get_slice(&subset, &nums));
     }
-    /*
-    for (i, val) in uh.iter().enumerate() {
-        println!("{}: {}", i, val);
-    }
-    */
-
 }
