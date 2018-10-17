@@ -4,7 +4,7 @@ extern crate rand;
 
 use std::{env, process};
 use rand::prelude::*;
-use num::{Integer, BigUint, traits, pow, cast::FromPrimitive};
+use num::{Integer, BigUint, pow};
 
 fn gen_nums(n: u64) -> Vec<u64> {
     let mut rand_nums = Vec::with_capacity(n as usize);
@@ -43,7 +43,7 @@ fn subset_sum(nums: &Vec<u64>, k: u64) -> (bool, BigUint) {
         if sum == k {
             return (true, i);
         }
-        println!("{}: {} {:?}", i, sum, subset);
+        //println!("{}: {} {:?}", i, sum, subset);
         i = i + 1 as u64;
     }
 
@@ -66,10 +66,10 @@ fn main() {
         },
     };
 
-    let k = match args[1].parse::<u64>() {
-        Ok(n) => n,
+    let k = match args[2].parse::<u64>() {
+        Ok(k) => k,
         Err(_) => {
-            println!("Please enter a positive integer for N!");
+            println!("Please enter a positive integer for k!");
             process::exit(-1);
         },
     };
