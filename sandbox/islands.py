@@ -3,6 +3,10 @@
 import random
 import sys
 
+# Given a map, find the number of islands that exist on the map
+# This is clearly an undirected graph problem, but my brain thought of this
+# terrible implementation first so we're starting here
+
 def print_arr(arr):
     for row in arr:
         print(''.join(chr(9617) if i == 0 else chr(9608) for i in row))
