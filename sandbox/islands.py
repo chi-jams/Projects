@@ -5,7 +5,7 @@ import sys
 
 def print_arr(arr):
     for row in arr:
-        print(''.join(str(i) for i in row))
+        print(''.join(chr(9617) if i == 0 else chr(9608) for i in row))
 
 def find_island(arr, i, j, consumed):
     # If the row or col is out of bounds
