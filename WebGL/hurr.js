@@ -1,20 +1,26 @@
 
 const mat4 = glMatrix.mat4;
-    
+
 const vsSrc = `
     attribute vec4 vPos;
+    attribute vec4 vColor;
 
     uniform mat4 mvMat;
     uniform mat4 proj;
 
+    varying lowp vec4 color;
+
     void main() {
         gl_Position = proj * mvMat * vPos;
+        color = vColor;
     }
 `;
 
 const fsSrc = `
+    varying lowp vec4 color;
     void main() {
-        gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
+        gl_FragColor = color;
+        // gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
     }
 `;
 
@@ -27,7 +33,7 @@ function initShaderProgram(gl, shaders) {
         console.log(shader);
 
         let compiled_shader = loadShader(gl, shader.type, shader.src);
-        
+
         compiled_shaders.push(compiled_shader);
     });
 
@@ -45,9 +51,9 @@ function initShaderProgram(gl, shaders) {
     return shader_program;
 }
 
-// Compile a single shader in a pipeline 
+// Compile a single shader in a pipeline
 function loadShader(gl, type, src) {
-    
+
     const shader = gl.createShader(type);
 
     gl.shaderSource(shader, src);
@@ -64,11 +70,23 @@ function loadShader(gl, type, src) {
     return shader;
 }
 
+function wrapBuf(buf, components, type, norm, stride, offset) {
+    return {
+        buffer: buf,
+        num_components: components,
+        type: type,
+        normalize: norm,
+        stride: stride,
+        offset:offset,
+    }
+}
+
 function initBuffs(gl) {
     let pos_buf = gl.createBuffer();
+    let colo_buf = gl.createBuffer();
 
     gl.bindBuffer(gl.ARRAY_BUFFER, pos_buf);
-    
+
     const pos = [
         -1.0, 1.0,
         1.0, 1.0,
@@ -80,9 +98,36 @@ function initBuffs(gl) {
                   new Float32Array(pos),
                   gl.STATIC_DRAW);
 
+    gl.bindBuffer(gl.ARRAY_BUFFER, colo_buf);
+
+    const colo = [
+        1.0, 1.0, 1.0, 1.0,
+        1.0, 0.0, 0.0, 1.0,
+        0.0, 1.0, 0.0, 1.0,
+        0.0, 0.0, 1.0, 1.0,
+    ];
+
+    gl.bufferData(gl.ARRAY_BUFFER,
+                  new Float32Array(colo),
+                  gl.STATIC_DRAW);
+
     return {
-        position: pos_buf,
+        position: wrapBuf(pos_buf, 2, gl.FLOAT, false, 0, 0),
+        color: wrapBuf(colo_buf, 4, gl.FLOAT, false, 0, 0),
     };
+}
+
+function bindBuf(gl, buf, attrib_location) {
+    gl.bindBuffer(gl.ARRAY_BUFFER, buf.buffer);
+    gl.vertexAttribPointer(
+        attrib_location,
+        buf.num_components,
+        buf.type,
+        buf.normalize,
+        buf.stride,
+        buf.offset);
+
+    gl.enableVertexAttribArray(attrib_location);
 }
 
 function draw(gl, prog_info, bufs) {
@@ -104,24 +149,8 @@ function draw(gl, prog_info, bufs) {
     const mvMat = mat4.create();
     mat4.translate(mvMat, mvMat, [0.0, 0.0, -6.0]);
 
-    const components = 2;
-    const type = gl.FLOAT;
-    const normalize = false;
-    const stride = 0;
-
-    const offset = 0;
-
-    gl.bindBuffer(gl.ARRAY_BUFFER, bufs.position);
-    gl.vertexAttribPointer(
-        prog_info.attribLocations.vertexPosition,
-        components,
-        type,
-        normalize,
-        stride,
-        offset);
-
-    gl.enableVertexAttribArray(
-        prog_info.attribLocations.vertexPosition);
+    bindBuf(gl, bufs.position, prog_info.attribLocations.vertexPosition);
+    bindBuf(gl, bufs.color, prog_info.attribLocations.vertexColor);
 
     gl.useProgram(prog_info.program);
 
@@ -160,6 +189,7 @@ function main() {
         program: shader_program,
         attribLocations: {
             vertexPosition: gl.getAttribLocation(shader_program, 'vPos'),
+            vertexColor: gl.getAttribLocation(shader_program, 'vColor'),
         },
         uniformLocations: {
             projectionMatrix: gl.getUniformLocation(shader_program, 'proj'),
