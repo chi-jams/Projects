@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
-from flask import Flask, render_template
-app = Flask(__name__)
+from bottle import jinja2_view, Bottle, route, run
+from jinja2 import Template
 
-@app.route('/')
+@route('/')
+@jinja2_view('index.html', template_lookup=['templates'])
 def index():
-    return render_template("index.html")
+    return {}
 
+run(host='localhost', port=8080)
