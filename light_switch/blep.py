@@ -15,12 +15,11 @@ if __name__ == "__main__":
         sys.exit(-1)
     cfg = yaml.load(open(DEFAULT_CFG, 'r').read(), Loader=Loader)
 
-    b = Bridge(cfg['ip'])
+    b = Bridge(cfg['hue_ip'])
     b.connect()
 
     room = b.get_group(cfg['group'])
 
-    #print(room)
     b.set_light([int(i) for i in room["lights"]], "on", eval(sys.argv[1]))
     if len(sys.argv) > 2:
         b.set_light([int(i) for i in room["lights"]], "hue", eval(sys.argv[2]), transitiontime=1)
