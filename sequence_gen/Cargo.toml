@@ -1,0 +1,14 @@
+[package]
+name = "sequence_gen"
+version = "0.1.0"
+authors = ["Daichi Jameson <djameson@mines.edu>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "*"
+
+[dependencies.synthrs]
+git = "https://github.com/gyng/synthrs"
+
