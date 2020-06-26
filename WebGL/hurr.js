@@ -24,7 +24,7 @@ const fsSrc = `
     }
 `;
 
-main();
+window.onload = main;
 
 // Compile and link a full shader program
 function initShaderProgram(gl, shaders) {
@@ -139,7 +139,7 @@ function draw(gl, prog_info, bufs) {
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
     const FoV = 45 * Math.PI / 180;
-    const aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
+    let aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
     const z_near = 0.1;
     const z_far = 100.0;
     const proj = mat4.create();
@@ -171,6 +171,19 @@ function draw(gl, prog_info, bufs) {
 function main() {
     const canvas = document.querySelector("#glCanvas");
 
+    let resize_canvas = () => {
+        const screen_width = window.innerWidth;
+        const screen_height = window.innerHeight;
+        console.log(`Window dimensions: (${screen_width},${screen_height})`);
+
+        canvas.width = screen_width;
+        canvas.height = screen_height;
+
+        draw(gl, prog_info, bufs);
+    };
+
+    window.onresize = resize_canvas;
+
     const gl = canvas.getContext("webgl");
 
     if (gl === null) {
@@ -198,5 +211,6 @@ function main() {
     };
 
     let bufs = initBuffs(gl);
-    draw(gl, prog_info, bufs);
+
+    resize_canvas();
 }
